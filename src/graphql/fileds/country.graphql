@@ -1,0 +1,8 @@
+fragment CountryFilelds on Country {
+  code
+  name
+  native
+  phone
+  currency
+  emoji
+}

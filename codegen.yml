@@ -1,0 +1,10 @@
+schema: https://countries.trevorblades.com/
+generates:
+  ./src/generated/graphql.ts:
+    documents: ./src/graphql/**/*.graphql
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-urql
+    config:
+      withHooks: true

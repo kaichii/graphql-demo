@@ -1,0 +1,11 @@
+query Countries($filter: CountryFilterInput) {
+  countries(filter: $filter) {
+    ...CountryFilelds
+  }
+}
+
+query Country($code: ID!) {
+  country(code: $code) {
+    ...CountryFilelds
+  }
+}
